@@ -35,12 +35,12 @@ public class SOFAServerlessCompatibleTestMojoConfiguration {
     /**
      * 当前测试的名字。
      */
-    private String       name;
+    private String name;
 
     /**
      * 初始化的类名。
      */
-    private String       bootstrapClass;
+    private String bootstrapClass;
 
     /**
      * 测试的类列表。
@@ -50,6 +50,6 @@ public class SOFAServerlessCompatibleTestMojoConfiguration {
     /**
      * 需要被模块加载的类列表。
      */
-    private List<String> includeClassPatterns;
+    private List<String> loadByBizClassLoaderPatterns;
 
 }

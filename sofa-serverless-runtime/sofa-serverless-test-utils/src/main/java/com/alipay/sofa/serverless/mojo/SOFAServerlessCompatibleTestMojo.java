@@ -113,7 +113,7 @@ public class SOFAServerlessCompatibleTestMojo extends AbstractMojo {
             .emptyIfNull(configs)) {
             result.add(new SOFAArkTestBiz(config.getBootstrapClass(), config.getName(), project
                 .getVersion(), ListUtils.emptyIfNull(config.getTestClasses()), ListUtils.union(
-                config.getIncludeClassPatterns(), rootProjectClasses), baseClassLoader));
+                config.getLoadByBizClassLoaderPatterns(), rootProjectClasses), baseClassLoader));
         }
         return result;
     }
